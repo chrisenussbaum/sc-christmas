@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 Days of Christmas 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎄 25 Days of Christmas 2024 🎄</h1>
+            
+            <!-- Livestream Section -->
+            <div class="livestream-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/LIVE_STREAM_ID" 
+                    title="Christmas Giveaway Livestream"
+                    allowfullscreen>
+                </iframe>
+                <p class="stream-info">Watch the livestream daily at 6 PM PST for new winners!</p>
+            </div>
+
+            <!-- Countdown Alert -->
+            <div class="alert">
+                <span id="countdown">Loading countdown...</span>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="search" id="winner-search" placeholder="Search winners...">
+            </div>
+        </header>
+
+        <!-- Winners Grid -->
+        <div class="winners-grid" id="winners-grid">
+            <!-- Winners will be dynamically inserted here -->
+            <div class="loading">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Claim Modal -->
+    <div id="claim-modal" class="modal">
+        <div class="modal-content">
+            <h2>🎁 Claim Your Gift!</h2>
+            <p>Congratulations! Check your Instagram DMs for your gift code.</p>
+            <div class="modal-buttons">
+                <button class="btn cancel">Close</button>
+                <button class="btn confirm">Confirm Claim</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Christmas Giveaway</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
